@@ -1,11 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+/* custom properties - colors */
+:root {
+    --color-mid: #758bfd;
+    --color-darker: #27187e;
+    --color-lighter: #aeb8fe;
+    --color-orange: #ff8600;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+
+}
 
 #navbar {
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: var(--color-darker);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    z-index: 2;
+}
+
+#navbar ul {
+    display: flex;
 }
 
 #welcome-section {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-lighter);
+
 }
 
-@media only screen and ()
+#welcome-section > h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+    color:var(--color-darker);
+}
+
+#welcome-section > p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    padding-top:1em;
+    color:var(--color-darker);
+}
+
+@media only screen and (max-width: 640px) {
+    :root {
+        font-size: 13px;
+    }
+}
