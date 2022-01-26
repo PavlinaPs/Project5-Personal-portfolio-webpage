@@ -2,10 +2,11 @@
 
 /* custom properties - colors */
 :root {
-    --color-mid: #758bfd;
-    --color-darker: #27187e;
-    --color-lighter: #aeb8fe;
-    --color-orange: #ff8600;
+    --color-mid: #a71d31;
+    --color-darker: #3f0d12;
+    --color-lighter: #f1f0cc;
+    --color-4: #8d775f;
+    --color-5: #d5bf86;
     font-size: 16px;
 }
 
@@ -22,11 +23,12 @@ body {
 #navbar {
     position: fixed;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     top:0;
     left:0;
     width: 100%;
+    height: 3.5rem;
     background-color: var(--color-darker);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
     z-index: 2;
@@ -34,6 +36,26 @@ body {
 
 #navbar ul {
     display: flex;
+}
+
+#navbar li {
+    padding: 1.15rem 1rem;
+    border-radius: 0.5em;
+    list-style-type: none;
+}
+
+#navbar li:hover {
+    background-color: var(--color-mid);
+    
+}
+
+#navbar a {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--color-5);
+    text-transform: uppercase;
+    
 }
 
 #welcome-section {
@@ -49,14 +71,14 @@ body {
 #welcome-section > h1 {
     font-family: 'Kanit', sans-serif;
     font-size: 2.5rem;
-    color:var(--color-darker);
+    color:var(--color-mid);
 }
 
 #welcome-section > p {
     font-family: 'Kanit', sans-serif;
     font-size: 1.25rem;
     padding-top:1em;
-    color:var(--color-darker);
+    color:var(--color-4);
 }
 
 @media only screen and (max-width: 640px) {
