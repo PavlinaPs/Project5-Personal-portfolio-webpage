@@ -142,7 +142,8 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 
 h2 {
@@ -154,6 +155,8 @@ h2 {
     padding-top: 5rem;
     padding-bottom:1rem;
 }
+
+/* About */
 
 #wrapper {
     display: flex;
@@ -189,19 +192,62 @@ h2 {
     background-color: var(--color-lighter);
 }
 
+/* Projects page */
+
 h3 {
     font-family: 'Kanit', sans-serif;
     padding-bottom: 0.5rem;
 }
 
+#wrapper-projects, #wrapper-exercises {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.sub-section-title {
+    font-family: 'Kanit', sans-serif;
+    color:var(--color-mid);
+    font-size: 1.3rem;
+    padding-left: 5%;
+    padding-bottom: 0.3rem;
 
+}
+
+#project-gallery, #exercises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-tile {
+   border: 0.2em solid var(--color-mid);
+   border-radius: 0.4em;
+   margin: 0.5rem;
+   background-color: var(--color-mid);
+   font-family: Geneva, sans-serif;
+   color: var(--color-lighter);
+   padding-bottom: 0.5rem;
+}
+
+.project-tile > a > img, .exercise-tile > a > img {
+    width: 20rem;
+    height: auto;
+    padding-bottom: 0.5rem;
+}
+
+.project-tile p {
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+    font-weight: 535;
+}
 
 @media only screen and (max-width: 640px) {
     :root {
         font-size: 13px;
     }
+
+    .sub-section-title {
+        align-self: center;
+    }
 }
-
-
- 
