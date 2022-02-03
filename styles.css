@@ -242,6 +242,57 @@ h3 {
     font-weight: 535;
 }
 
+/* Contacts page */
+
+#Contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.contacts-sub-title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    padding-top:1em;
+    color:var(--color-4);
+    text-align: center;
+    margin-top: 6rem;
+}
+
+#icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin-top: 2rem;
+}
+
+#github32 {
+    display: none;
+}
+
+#github64 {
+    padding-right: 18px;
+}
+
+#email-icon {
+    width: 45px;
+    margin-left:2rem;
+    margin-right: 2rem;
+}
+
+#phone-icon {
+    height: 62px;
+    padding-left: 5px;
+}
+
+#phone-num-div {
+    height: 100vh;
+    text-align: center;
+    padding-top: 20rem;
+}
+
 @media only screen and (max-width: 640px) {
     :root {
         font-size: 13px;
