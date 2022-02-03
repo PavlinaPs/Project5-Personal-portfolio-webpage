@@ -140,6 +140,8 @@ body {
     }
 }
 
+/* Sections */
+
 section {
     height: 100%;
     min-height: 100vh;
@@ -210,7 +212,6 @@ h3 {
     font-size: 1.3rem;
     padding-left: 5%;
     padding-bottom: 0.3rem;
-
 }
 
 #project-gallery, #exercises {
@@ -265,10 +266,6 @@ h3 {
     align-items: center;
     
     margin-top: 2rem;
-}
-
-#github32 {
-    display: none;
 }
 
 #github64 {
